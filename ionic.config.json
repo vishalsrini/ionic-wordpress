@@ -1,0 +1,14 @@
+{
+  "name": "vmcreationsblog",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/",
+      "proxyUrl": "https://technology.vishalsrini.com"
+    }
+  ],
+  "pro_id": "03975134"
+}

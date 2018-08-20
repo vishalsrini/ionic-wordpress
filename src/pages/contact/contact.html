@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>
+      Contact
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let author of authors">
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img [src]="getAuthor(author.slug)">
+      </ion-avatar>
+      <h2>{{author.first_name}} {{author.last_name}}</h2>
+      <p>{{author.name}}</p>
+    </ion-item>
+  
+    <ion-card-content [innerHTML]="author.description">
+      
+    </ion-card-content>
+  
+  </ion-card>
+</ion-content>
